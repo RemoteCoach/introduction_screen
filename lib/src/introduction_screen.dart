@@ -487,10 +487,10 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                               : const SizedBox(),
                         ),
                       ),
-                      // Expanded(
-                      //   flex: widget.nextFlex,
-                      //   child: rightBtn ?? const SizedBox(),
-                      // ),
+                      Expanded(
+                        flex: widget.nextFlex,
+                        child:  const SizedBox(),
+                      ),
                     ].asReversed(widget.rtl),
                   ),
                 ),
