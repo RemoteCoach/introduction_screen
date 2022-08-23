@@ -460,11 +460,12 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                   margin: widget.controlsMargin,
                   decoration: widget.dotsContainerDecorator,
                   child: Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Expanded(
-                        flex: widget.skipOrBackFlex,
-                        child: leftBtn ?? const SizedBox(),
-                      ),
+                      // Expanded(
+                      //   flex: widget.skipOrBackFlex,
+                      //   child: leftBtn ?? const SizedBox(),
+                      // ),
                       Expanded(
                         flex: widget.dotsFlex,
                         child: Center(
@@ -487,10 +488,10 @@ class IntroductionScreenState extends State<IntroductionScreen> {
                               : const SizedBox(),
                         ),
                       ),
-                      Expanded(
-                        flex: widget.nextFlex,
-                        child:  const SizedBox(),
-                      ),
+                      // Expanded(
+                      //   flex: widget.nextFlex,
+                      //   child:  const SizedBox(),
+                      // ),
                     ].asReversed(widget.rtl),
                   ),
                 ),
